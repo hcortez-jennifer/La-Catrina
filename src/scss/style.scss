@@ -4,5 +4,11 @@
 @use 'components';
 @use 'pages';
 
-
+// UNIVERSAL STYLES
+.container{
+    @media (max-width: 1199px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
 

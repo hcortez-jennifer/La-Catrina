@@ -1,0 +1,16 @@
+// PRIMARY CTA
+.cta {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, var(--orange-clr), var(--orange-clr) 50%, #222 50%);
+    background-size: 200% 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: background-position 0.4s ease-in-out;
+
+    &:hover{
+        background-position: -100% 0;
+    }
+}
