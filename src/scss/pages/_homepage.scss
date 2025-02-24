@@ -5,10 +5,7 @@
     width: 100%;
     height: 100vh;
     background-color: var(--beige-clr);
-    background-image: url("../../assets/img/pattern.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
+    @include a.backgroundImg("../../assets/img/pattern.png", left);
     position: relative;
 }
 
@@ -32,12 +29,6 @@
         position: absolute;
         top: 3%;
         right: 5%;
-    }
-
-    h1{
-        font-size: clamp(2.5rem, 5vw, 5.938rem);
-        font-weight: 800;
-        line-height: 1;
     }
 }
 
@@ -123,4 +114,28 @@
             display: none;
         }
     }
+}
+
+// ABOUT SECTION
+.about{
+    @include a.backgroundImg("../../assets/img/pattern.png", left);
+
+    img{
+        border-radius: 50px;
+        border: 10px solid var(--purple-clr);
+    }
+
+    .about__content{
+        .pb-sm-4{
+            @media (max-width: 575px) {
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+.food__banner{
+    height: 80vh;
+    @include a.backgroundImg("../../assets/img/food_banner.jpg", center, fixed);
+    margin-bottom: 50em;
 }

@@ -5,10 +5,18 @@
 @use 'pages';
 
 // UNIVERSAL STYLES
+body{
+    background-color: var(--coral-clr);
+}
+
 .container{
     @media (max-width: 1199px) {
         max-width: 90%;
         margin: 0 auto;
     }
+}
+
+section:not(.hero){
+    margin-top: 7em;
 }
 
