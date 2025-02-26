@@ -13,3 +13,34 @@
     background-repeat: no-repeat;
     background-attachment: $attachment;
 }
+
+// PRIMARY CTA
+$orange-clr: var(--orange-clr);
+$yellow-clr: var(--yellow-clr);
+$beige-clr: var(--beige-clr);
+$purple-clr: var(--purple-clr);
+$black-clr: var(--black-clr);
+
+@mixin ctaBtn($textClr: #fff, $bgClr: $orange-clr, $hoverClr: #fff) {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-weight: bold;
+    color: $textClr;
+    background: linear-gradient(to right, $bgClr, $bgClr 50%, #222 50%);
+    background-size: 200% 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: background-position 0.4s ease-in-out;
+
+    &:hover{
+        background-position: -100% 0;
+        color: $hoverClr;
+    }
+}
+
+// IMG BORDER
+@mixin imgBorder($bdRadius: 50px, $bdClr: $purple-clr) {
+    border-radius: $bdRadius;
+    border: 10px solid $bdClr;
+    padding: 0.5em;
+}
