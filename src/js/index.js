@@ -12,3 +12,29 @@ window.addEventListener('scroll', () => {
         navLinks.forEach(link => link.classList.remove('nav-links__scrolled'));
     }
 });
+
+// EVENTS CAROUSEL
+document.addEventListener("DOMContentLoaded", () => {
+    let carousel = document.querySelector("#eventsCarousel");
+    let bgImage = document.querySelector(".events__img");
+
+    function updateBackground(event) {
+        let activeSlide = event.relatedTarget; 
+        let newBg = activeSlide.getAttribute("data-bg");
+
+        bgImage.classList.add("fade-out");
+
+        setTimeout(() => {
+            bgImage.style.backgroundImage = `url(${newBg})`;
+
+            bgImage.classList.remove("fade-out");
+            bgImage.classList.add("fade-in");
+        }, 500); 
+
+        setTimeout(() => {
+            bgImage.classList.remove("fade-in");
+        }, 1000);
+    }
+
+    carousel.addEventListener("slide.bs.carousel", updateBackground);
+});

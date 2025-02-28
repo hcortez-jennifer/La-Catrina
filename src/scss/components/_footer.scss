@@ -1,0 +1,21 @@
+.footer{
+    h4{
+        color: var(--yellow-clr);
+        font-family: "Chocolate";
+    }
+
+    .day{
+        font-weight: 500;
+    }
+
+    .time{
+        display: block;
+        font-weight: 300;
+    }
+
+    @media (max-width: 767px) {
+        .footer__container .row:nth-of-type(1){
+            gap: 2em;
+        }
+    }
+}
