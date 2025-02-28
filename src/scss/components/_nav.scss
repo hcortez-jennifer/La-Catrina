@@ -5,6 +5,10 @@
         color: var(--black-clr);
         transition: .5s ease-in;
     }
+
+    &:hover{
+        color: var(--yellow-clr);
+    }
 }
 
 @media (max-width: 991px) {

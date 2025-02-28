@@ -2,62 +2,61 @@
 
 // HERO SECTION
 .hero{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--beige-clr);
     @include a.backgroundImg("../../assets/img/pattern.png", left);
-    position: relative;
-}
 
-.hero__container{
-    position: relative;
-
-    .hero__blob{
-        position: absolute;
-        top: 20%;
+    .hero__img{
+        right: 0;
+        background: url('../../assets/img/hero_img.jpg') no-repeat center center/cover;
     }
-}
-
-.hero__content{
-    max-width: 650px;
-    padding-block: 5em;
-    position: relative;
-    z-index: 1;
-
-    .circular__text{
-        position: absolute;
-        top: 3%;
-        right: 5%;
-    }
-}
-
-.hero__img{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50vw;
-    height: 100vh;
-    background: url('../../assets/img/hero_img.jpg') no-repeat center center/cover;
-}
-
-@media (max-width: 1199px) {
+    
     .hero__container{
         .hero__content{
-            max-width: 500px;
-    
+            padding-block: 5em;
+
             .circular__text{
+                position: absolute;
+                top: 5%;
                 right: 0;
             }
         }
 
         .hero__blob{
-            top: 15%;
+            position: absolute;
+            top: 21%;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero{
+        .hero__container{
+            .hero__content{
+                max-width: 400px;
+        
+                .circular__text{
+                    top: 2%;
+                }
+            }
+    
+            .hero__blob{
+                max-width: 400px;
+            }
         }
     }
 }
 
 @media (max-width: 991px) {
-    .hero {
+    .hero{
+        .hero__container{
+            .hero__content{
+                max-width: 100%;
+            }
+
+            .hero__blob{
+                top: 18%;
+            }
+        }
+
         .hero__img{
             position: relative;
             width: 100%;
@@ -73,12 +72,10 @@
 
         .hero__container{
             .hero__content{
-                max-width: 100%;
                 margin-top: 5em;
-    
+
                 .circular__text{
-                    top: 0;
-                    right: 0;
+                    right: 5%;
                 }
             }
 
@@ -91,27 +88,15 @@
 
 @media (max-width: 575px) {
     .hero{
-        text-align: left;
-    }
-    .hero__container{
-        .hero__content{
-            padding-block: 4em;
-            overflow: hidden;
-
-            .circular__text{
-                position: relative;
-                float: right;
-                rotate: 50deg;
+        .hero__container{
+            .hero__content{
+                padding-block: 4em;
+    
+                .circular__text{
+                    display: none;
+                }
             }
-        }
-    } 
-}
-
-@media (max-width: 385px) {
-    .hero__content{
-        .circular__text{
-            display: none;
-        }
+        } 
     }
 }
 
@@ -194,10 +179,54 @@
     }
 }
 
-@media (max-width: 380px) {
-    .menu__content .row:nth-of-type(1){
-        .menu__header{
-            text-align: left;
+// EVENTS CONTENT
+.events{
+    .events__img{
+        left: 0;
+        transition: opacity 0.5s ease-in-out;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+   
+    .fade-out{
+        opacity: 0;
+    }
+    
+    .fade-in{
+        opacity: 1;
+    }
+
+    .carousel-item{
+        @media (max-width: 767px) {
+            @include a.backgroundImg("../../assets/img/pattern.png", left);
+        }
+    }
+
+    .events__content{
+        padding-block: 10em;
+
+        .sub__title{
+            color: var(--purple-clr);
+        }
+    }
+
+    .carousel-indicators{
+        margin-top: 1.5rem;
+
+        button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--black-clr);
+            border: none;
+            opacity: 0.5;
+            transition: opacity 0.3s ease-in-out;
+
+            &.active{
+                opacity: 1;
+            }
         }
     }
 }
