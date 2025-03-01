@@ -11,6 +11,10 @@
     }
 }
 
+.menu__page__nav__link{
+    color: var(--black-clr);
+}
+
 @media (max-width: 991px) {
     .navbar-toggler{
         color: transparent;

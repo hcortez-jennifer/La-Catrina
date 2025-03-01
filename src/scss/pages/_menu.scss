@@ -47,9 +47,16 @@
     }
 }
 
+// MENU PAGE
+.menu__category button.active {
+    background-color: var(--black-clr);
+    color: white;
+}
 
+.menu__card {
+    display: none;
+}
 
-
-
-
-
+.menu__card.show {
+    display: block;
+}

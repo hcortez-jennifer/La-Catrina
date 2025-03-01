@@ -130,6 +130,8 @@
 }
 
 .menu__item{
+    max-width: 550px;
+
     img{
         width: 200px;
         height: 200px;
@@ -140,7 +142,6 @@
 
     .menu__item__info{
         flex: 1;
-        max-width: 300px;
     }
 
     .menu__item__title{
@@ -162,10 +163,6 @@
 
     .menu__item{
         flex-direction: column;
-
-        .menu__item__info{
-            max-width: 100%;
-        }
     }
 }
 

@@ -29,16 +29,16 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
-                                <a href="../../index.html" class="nav-link">Home</a>
+                                <a href="../../index.html" class="nav-link menu__page__nav__link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../index.html#about" class="nav-link">About</a>
+                                <a href="../../index.html#about" class="nav-link menu__page__nav__link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#menu" class="nav-link">Menu</a>
+                                <a href="#menu" class="nav-link menu__page__nav__link">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#contact" class="nav-link">Contact</a>
+                                <a href="#contact" class="nav-link menu__page__nav__link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -66,15 +66,124 @@
         </div>
     </section>
 
+    <section class="menu__page">
+        <div class="container menu__page__container">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h1>Our Menu</h1>
+                </div>
+                <div class="col-md-6 menu__category">
+                    <button class="btn btn-outline-dark mx-1 mt-3 active" data-category="all">All</button>
+                    <button class="btn btn-outline-dark mx-1 mt-3" data-category="breakfast">Breakfast</button>
+                    <button class="btn btn-outline-dark mx-1 mt-3" data-category="lunch">Lunch</button>
+                    <button class="btn btn-outline-dark mx-1 mt-3" data-category="dinner">Dinner</button>
+                    <button class="btn btn-outline-dark mx-1 mt-3" data-category="desserts">Desserts</button>
+                    <button class="btn btn-outline-dark mx-1 mt-3" data-category="appetizers">Appetizers</button>
+                </div>
+            </div>
 
-
-
-
-
-
-
-
-
+            <div class="menu__page__content">
+                <div class="row justify-content-between g-5">
+                    <div class="col-md-4 col-sm-6 lunch breakfast menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Chilaquiles<span class="price">$15.75</span></p>
+                                <p>Crispy corn tortilla chips, salsa, cheese, beef, avocado, onion, brown beans, cheese, sour cream</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 lunch menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Arroz con Leche<span class="price">$2.17</span></p>
+                                <p>Creamy rice pudding, cinnamon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 dinner lunch breakfast menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Tamales<span class="price">$3.89</span></p>
+                                <p>Corn tamales filled with roasted poblanos, chicken, cheese, mole wrapped in corn husks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 desserts menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                               <p class="menu__item__title mb-2 pb-2">Chocoflan<span class="price">$20.25</span></p>
+                               <p>Eggs, milk, sugar, cocoa powder, and cream cheese.</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 lunch menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Tacos de Birria<span class="price">$4.50</span></p>
+                                <p>Beef, corn tortilla, cilantro, onion, pickled onions, lime, salsa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 appetizers menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Esquites<span class="price">$2.75</span></p>
+                                <p>Street-style corn in a cup, sautéed with butter, lime juice, cotija cheese, chili powder, mayonnaise</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 dinner lunch menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4 ">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Tostadas<span class="price">$2.72</span></p>
+                                <p>Tostada shell, sour cream, lettuce, cecina, tomato, brown beans, cotija cheese</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 breakfast menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Huevos Rancheros<span class="price">$3.05</span></p>
+                                <p>Two fried eggs on crispy corn tortillas, topped with spicy ranchero sauce, refried beans, queso fresco, chili peppers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 dinner menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Camarones a la Diabla<span class="price">$12.50</span></p>
+                                <p>Spicy shrimp in chile de árbol sauce, tomatoes, garlic, onions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 lunch menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Chile Rellenos<span class="price">$12.89</span></p>
+                                <p>Roasted poblano pepper, stuffed with cheese, tomato sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 lunch menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Quesadilla<span class="price">$4.89</span></p>
+                                <p>Corn tortilla, chicken, cilantro, sour cream, jalapeño pepper, onion, cheese, guacamole, salsa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 dinner lunch menu__card show">
+                        <div class="menu__item d-flex  align-items-lg-center align-items-sm-start gap-4">
+                            <div class="menu__item__info">
+                                <p class="menu__item__title mb-2 pb-2">Enchiladas<span class="price">$10.50</span></p>
+                                <p>Corn tortilla, chicken, cilantro, onion, cotija cheese, mole, sour cream, salsa, brown beans</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer" id="contact">
         <div class="container footer__container">
