@@ -11958,7 +11958,6 @@ h1, h2 {
   top: 0;
   width: 50vw;
   height: 100vh;
-  background: url("../../assets/img/event1.jpg") no-repeat center center/cover;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -12119,6 +12118,7 @@ h1, h2 {
   }
 }
 .events .events__img {
+  background: url("../../assets/img/event1.jpg") no-repeat center center/cover;
   left: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -12164,6 +12164,44 @@ h1, h2 {
   opacity: 1;
 }
 
+.slider {
+  --width: 300px;
+  --height: 500px;
+  --quantity: 10;
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+.slider .slider__track {
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+.slider .slider__track .slider__item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: infiniteScroll 15s linear infinite;
+  animation-delay: calc(15s / var(--quantity) * (var(--position) - 1) - 10s) !important;
+}
+.slider .slider__track .slider__item img {
+  border-radius: 50px;
+  border: 10px solid var(--purple-clr);
+  padding: 0.5em;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes infiniteScroll {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
 body {
   background-color: var(--coral-clr);
 }
