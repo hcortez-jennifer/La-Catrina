@@ -1,3 +1,5 @@
+import * as bootstrap from 'bootstrap';
+
 // NAVBAR SCROLL COLOR CHANGE
 window.addEventListener('scroll', () => {
     let navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
