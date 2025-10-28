@@ -2,11 +2,11 @@
 
 // HERO SECTION
 .hero{
-    @include a.backgroundImg("../../assets/img/pattern.png", left);
+    @include a.backgroundImg("../../assets/svg/pattern.svg", left);
 
     .hero__img{
         right: 0;
-        background: url('../../assets/img/hero_img.jpg') no-repeat center center/cover;
+        background: url('../../assets/img/hero_img.png') no-repeat center center/cover;
     }
     
     .hero__container{
@@ -18,6 +18,16 @@
                 top: 5%;
                 right: 0;
             }
+
+             h1{
+                text-wrap: balance;
+            }
+
+            .nav__social__icons{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
         }
 
         .hero__blob{
@@ -27,7 +37,7 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .hero{
         .hero__container{
             .hero__content{
@@ -35,25 +45,33 @@
         
                 .circular__text{
                     top: 2%;
+                    right: -10%;
                 }
             }
     
             .hero__blob{
-                max-width: 400px;
+                max-width: 360px;
             }
         }
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .hero{
         .hero__container{
             .hero__content{
                 max-width: 100%;
+
+                .circular__text{
+                    right: 0;
+                }
             }
 
             .hero__blob{
-                top: 18%;
+                top: 20%;
+                left: 8%;
+                width: auto;
+                height: 120px;
             }
         }
 
@@ -65,17 +83,22 @@
     }
 }
 
-@media (max-width: 767px) {
-    .hero {
+@media (max-width: 768px) {
+    .hero{
         flex-direction: column;
         text-align: center;
 
         .hero__container{
             .hero__content{
-                margin-top: 5em;
+                padding-block: 10em 2em;
 
                 .circular__text{
                     right: 5%;
+                    top: 18%;
+                }
+
+                .nav__social__icons{
+                    justify-content: center;
                 }
             }
 
@@ -86,11 +109,11 @@
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .hero{
         .hero__container{
             .hero__content{
-                padding-block: 4em;
+                padding-block-end: 3em;
     
                 .circular__text{
                     display: none;
