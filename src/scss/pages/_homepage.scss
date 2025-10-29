@@ -125,7 +125,7 @@
 
 // ABOUT SECTION
 .about{
-    @include a.backgroundImg("../../assets/img/pattern.png", left);
+    @include a.backgroundImg("../../assets/svg/pattern.svg", left);
 
     img{
         @include a.imgBorder;
@@ -133,7 +133,7 @@
 
     .about__content{
         .pb-sm-4{
-            @media (max-width: 575px) {
+            @media (max-width: 576px) {
                 padding-bottom: 1.5rem;
             }
         }
@@ -179,23 +179,31 @@
     }
 }
 
-@media (max-width: 991px) {
-    .menu__content .row:nth-of-type(1){
-        align-items: center;
-    }
-
+@media (max-width: 992px) {
     .menu__item{
         flex-direction: column;
     }
 }
 
 @media (max-width: 767px) {
+    .menu__item {
+        flex-direction: row;
+        align-items: center !important;
+        max-width: 600px;
+    }
+
     .menu__content .row:nth-of-type(1){
         flex-direction: column-reverse;
 
         .menu__header{
             text-align: center;
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .menu__item{
+        flex-direction: column;
     }
 }
 
@@ -221,7 +229,7 @@
 
     .carousel-item{
         @media (max-width: 767px) {
-            @include a.backgroundImg("../../assets/img/pattern.png", left);
+            @include a.backgroundImg("../../assets/svg/pattern.svg", left);
         }
     }
 
@@ -251,3 +259,38 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
