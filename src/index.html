@@ -115,7 +115,7 @@
             <div class="menu__content">
                 <div class="row g-5 mb-5 align-items-end">
                     <div class="col-md-6">
-                        <div class="menu__item d-flex  gap-4">
+                        <div class="menu__item d-flex align-items-lg-center align-items-sm-start gap-4">
                             <div><img src="/assets/img/taco.jpg" alt="" class="img-fluid"></div>
                             <div class="menu__item__info">
                                 <p class="menu__item__title mb-2 pb-2">Tacos de Birria<span class="price">$4.50</span></p>
@@ -178,7 +178,7 @@
 
             <div class="container events__container">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bg="/assets/img/event1.jpg">
+                    <div class="carousel-item active" data-bg="event1">
                         <div class="row flex-column-reverse flex-md-row">
                             <div class="col-12 col-md-6"></div>
                             <div class="col-12 col-md-1"></div>
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bg="/assets/img/event2.jpg">
+                    <div class="carousel-item" data-bg="event2">
                         <div class="row flex-column-reverse flex-md-row">
                             <div class="col-12 col-md-6"></div>
                             <div class="col-12 col-md-1"></div>
@@ -215,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bg="/assets/img/event3.jpg">
+                    <div class="carousel-item" data-bg="event3">
                         <div class="row flex-column-reverse flex-md-row">
                             <div class="col-12 col-md-6"></div>
                             <div class="col-12 col-md-1"></div>
@@ -242,44 +242,39 @@
     <footer class="footer" id="contact">
         <div class="container footer__container">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="/assets/img/logo.png" alt="Logo">
-                    <div class="nav__social__icons mt-2">
-                        <i class='bx bxl-instagram-alt me-2'></i>
-                        <i class='bx bxl-facebook-circle mx-2'></i>
-                        <i class='bx bxl-twitter mx-2'></i>
+                <div class="col-lg-4">
+                    <h2 class="mb-3 text-uppercase">Visit us</h2>
+                    <div class="directions">
+                        <p class="m-0 p-0">385 Portland Blvd, Belvidere, NY, 11173</p>
+                        <p class="m-0 p-0">917 - 942 - 1306</p>
+                        <p class="m-0 p-0">info@lacatrina.com</p>
                     </div>
+                    <a href="#" class="cta mt-4  text-decoration-none">Get Directions</a>
                 </div>
-                <div class="col-md-4">
-                    <h4 class="mb-3">Opening Hours</h4>
-                    <p class="day">Monday - Friday <span class="time">9:00 AM  - 10:00 PM</span></p>
-                    <p class="day">Saturday - Sunday <span class="time">8:00 AM  - 11:00 PM</span></p>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="/assets/svg/logo.svg" alt="Logo">
+                    </a>
+                    <div class="nav__social__icons mt-2 mb-5">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter'></i>
+                    </div>
+                    <div class="opening mb-4">
+                        <p class="mb-2">Opening Hours</p>
+                        <div class="details">
+                            <p class="m-0 p-0">Monday - Friday:  9:00 AM  - 10:00 PM</p>
+                            <p class="m-0 p-0">Saturday - Sunday:  8:00 AM  - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <small> &copy; 2025 Jennifer Cortez Herrera</small>
                 </div>
-                <div class="col-md-4">
-                    <h4 class="mb-3">Contact Us</h4>
-                    <ul class="list-unstyled">
-                        <li class="d-flex">
-                            <i class='bx bxs-map me-2'></i> 
-                            <p>385 Portland Blvd, Belvidere, NY, 11173 </p>
-                        </li>
-                        <li class="d-flex">
-                            <i class='bx bxs-phone me-2'></i> 
-                            <p>917-942-1306</p>
-                        </li>
-                        <li class="d-flex">
-                            <i class='bx bxs-envelope me-2'></i> 
-                            <p>lacatrina@gmail.com</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mb-3 border-top border-black pt-2">
-                <small> &copy; 2025 Jennifer Cortez Herrera</small>
             </div>
         </div>
     </footer>
 
     <script type="module" src="js/index.js"></script>
-    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script type="module" src="js/homepage.js"></script>
 </body>
 </html>

@@ -11,7 +11,6 @@
 }
 
 .nav-link{
-    color: var(--white-clr);
     color: var(--beige-clr);
 
     &.nav-links__scrolled{
@@ -22,10 +21,6 @@
     &:hover{
         color: var(--yellow-clr);
     }
-}
-
-.menu__page__nav__link{
-    color: var(--black-clr);
 }
 
 .offcanvas{
@@ -39,6 +34,10 @@
 .btn-close:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(33, 37, 41, 0.3);
+}
+
+.navbar-menu_page .nav-link{
+    color: var(--black-clr)
 }
 
 @media (max-width: 1200px) {
@@ -60,6 +59,10 @@
 
     .nav-link{
         color: var(--black-clr);
+    }
+
+    .navbar-menu_page .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(20, 20, 20, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     }
 }
 

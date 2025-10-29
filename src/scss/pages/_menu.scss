@@ -50,7 +50,7 @@
 // MENU PAGE
 .menu__category button.active {
     background-color: var(--black-clr);
-    color: white;
+    color: var(--beige-clr);
 }
 
 .menu__card {
@@ -59,4 +59,13 @@
 
 .menu__card.show {
     display: block;
+}
+
+@media (max-width: 576px) {
+    .menu__page__content{
+        .menu__item{
+            align-items: start !important;
+            flex-direction: row;
+        }
+    }
 }
