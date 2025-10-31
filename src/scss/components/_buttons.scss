@@ -1,6 +1,0 @@
-@use '../abstracts' as a;
-
-// PRIMARY CTA
-.cta{
-    @include a.ctaBtn;
-}
