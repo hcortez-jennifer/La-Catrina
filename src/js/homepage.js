@@ -1,14 +1,15 @@
 import * as bootstrap from 'bootstrap';
 
-import event1 from '../../assets/img/event1.jpg';
-import event2 from '../../assets/img/event2.jpg';
-import event3 from '../../assets/img/event3.jpg';
-
 // EVENTS CAROUSEL
 document.addEventListener("DOMContentLoaded", () => {
     let carousel = document.querySelector("#eventsCarousel");
     let bgImage = document.querySelector(".events__img");
-    let images = [event1, event2, event3];
+
+    const event1 = new URL("../../assets/img/event1.jpg", import.meta.url);
+    const event2 = new URL("../../assets/img/event2.jpg", import.meta.url);
+    const event3 = new URL("../../assets/img/event3.jpg", import.meta.url);
+
+    let images = [event1.href, event2.href, event3.href];
 
     function updateBackground(event) {
         let activeSlide = event.relatedTarget; 
